@@ -26,5 +26,12 @@ describe("metaParserPlugin", () => {
 			const ast = metaParser.parse("lineNumbers /hello/", { ecmaVersion: 2020 });
 			expect(ast).toMatchSnapshot();
 		});
+
+		it("should parse an assignment expression", () => {
+			const ast = metaParser.parse('title="Why everyone should learn Markdown"', {
+				ecmaVersion: 2020,
+			});
+			expect(ast).toMatchSnapshot();
+		});
 	});
 });

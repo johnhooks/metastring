@@ -181,3 +181,38 @@ Node {
   "type": "Program",
 }
 `;
+
+exports[`metaParserPlugin > snapshots > should parse an assignment expression 1`] = `
+Node {
+  "body": [
+    Node {
+      "end": 42,
+      "expression": Node {
+        "end": 42,
+        "left": Node {
+          "end": 5,
+          "name": "title",
+          "start": 0,
+          "type": "Identifier",
+        },
+        "operator": "=",
+        "right": Node {
+          "end": 42,
+          "raw": "\\"Why everyone should learn Markdown\\"",
+          "start": 6,
+          "type": "Literal",
+          "value": "Why everyone should learn Markdown",
+        },
+        "start": 0,
+        "type": "AssignmentExpression",
+      },
+      "start": 0,
+      "type": "ExpressionStatement",
+    },
+  ],
+  "end": 42,
+  "sourceType": "script",
+  "start": 0,
+  "type": "Program",
+}
+`;
