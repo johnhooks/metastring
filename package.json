@@ -1,6 +1,12 @@
 {
 	"name": "remark-code-metadata",
 	"version": "1.0.0-alpha.1",
+	"description": "Markdown code fence metadata parser",
+  "keywords": [
+		"code",
+		"metadata",
+    "markdown"
+  ],
 	"license": "MIT",
 	"author": "John Hooks <bitmachina@outlook.com> (https://johnhooks.io/)",
 	"homepage": "https://github.com/johnhooks/remark-code-metadata#readme",
