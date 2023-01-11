@@ -31,5 +31,22 @@ describe("build Metadata AST", () => {
 			const ast = build('title="Why everyone should learn Markdown"');
 			expect(ast).toMatchSnapshot();
 		});
+
+		describe("ranges", () => {
+			it("should parse a range", () => {
+				const ast = build("1,4..7");
+				expect(ast).toMatchSnapshot();
+			});
+
+			it("should parse a range after an identifier", () => {
+				const ast = build("lineNumbers 1,4..7");
+				expect(ast).toMatchSnapshot();
+			});
+
+			it("should parse a range before an identifier", () => {
+				const ast = build("1,4..7 lineNumbers");
+				expect(ast).toMatchSnapshot();
+			});
+		});
 	});
 });

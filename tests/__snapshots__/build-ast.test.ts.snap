@@ -1,5 +1,177 @@
 // Vitest Snapshot v1
 
+exports[`build Metadata AST > snapshots > ranges > should parse a range 1`] = `
+Node {
+  "body": [
+    Node {
+      "end": 6,
+      "expression": Node {
+        "end": 6,
+        "expressions": [
+          Node {
+            "end": 1,
+            "raw": "1",
+            "start": 0,
+            "type": "Literal",
+            "value": 1,
+          },
+          Node {
+            "end": 6,
+            "left": Node {
+              "end": 3,
+              "raw": "4",
+              "start": 2,
+              "type": "Literal",
+              "value": 4,
+            },
+            "operator": "..",
+            "right": Node {
+              "end": 6,
+              "raw": "7",
+              "start": 5,
+              "type": "Literal",
+              "value": 7,
+            },
+            "start": 2,
+            "type": "BinaryExpression",
+          },
+        ],
+        "start": 0,
+        "type": "SequenceExpression",
+      },
+      "start": 0,
+      "type": "ExpressionStatement",
+    },
+  ],
+  "end": 6,
+  "sourceType": "script",
+  "start": 0,
+  "type": "Program",
+}
+`;
+
+exports[`build Metadata AST > snapshots > ranges > should parse a range after an identifier 1`] = `
+Node {
+  "body": [
+    Node {
+      "end": 11,
+      "expression": Node {
+        "end": 11,
+        "name": "lineNumbers",
+        "start": 0,
+        "type": "Identifier",
+      },
+      "start": 0,
+      "type": "ExpressionStatement",
+    },
+    Node {
+      "end": 18,
+      "expression": Node {
+        "end": 18,
+        "expressions": [
+          Node {
+            "end": 13,
+            "raw": "1",
+            "start": 12,
+            "type": "Literal",
+            "value": 1,
+          },
+          Node {
+            "end": 18,
+            "left": Node {
+              "end": 15,
+              "raw": "4",
+              "start": 14,
+              "type": "Literal",
+              "value": 4,
+            },
+            "operator": "..",
+            "right": Node {
+              "end": 18,
+              "raw": "7",
+              "start": 17,
+              "type": "Literal",
+              "value": 7,
+            },
+            "start": 14,
+            "type": "BinaryExpression",
+          },
+        ],
+        "start": 12,
+        "type": "SequenceExpression",
+      },
+      "start": 12,
+      "type": "ExpressionStatement",
+    },
+  ],
+  "end": 18,
+  "sourceType": "script",
+  "start": 0,
+  "type": "Program",
+}
+`;
+
+exports[`build Metadata AST > snapshots > ranges > should parse a range before an identifier 1`] = `
+Node {
+  "body": [
+    Node {
+      "end": 6,
+      "expression": Node {
+        "end": 6,
+        "expressions": [
+          Node {
+            "end": 1,
+            "raw": "1",
+            "start": 0,
+            "type": "Literal",
+            "value": 1,
+          },
+          Node {
+            "end": 6,
+            "left": Node {
+              "end": 3,
+              "raw": "4",
+              "start": 2,
+              "type": "Literal",
+              "value": 4,
+            },
+            "operator": "..",
+            "right": Node {
+              "end": 6,
+              "raw": "7",
+              "start": 5,
+              "type": "Literal",
+              "value": 7,
+            },
+            "start": 2,
+            "type": "BinaryExpression",
+          },
+        ],
+        "start": 0,
+        "type": "SequenceExpression",
+      },
+      "start": 0,
+      "type": "ExpressionStatement",
+    },
+    Node {
+      "end": 18,
+      "expression": Node {
+        "end": 18,
+        "name": "lineNumbers",
+        "start": 7,
+        "type": "Identifier",
+      },
+      "start": 7,
+      "type": "ExpressionStatement",
+    },
+  ],
+  "end": 18,
+  "sourceType": "script",
+  "start": 0,
+  "type": "Program",
+}
+`;
+
 exports[`build Metadata AST > snapshots > should parse a RegExp 1`] = `
 Node {
   "body": [
@@ -176,6 +348,56 @@ Node {
     },
   ],
   "end": 11,
+  "sourceType": "script",
+  "start": 0,
+  "type": "Program",
+}
+`;
+
+exports[`build Metadata AST > snapshots > should parse a range 1`] = `
+Node {
+  "body": [
+    Node {
+      "end": 6,
+      "expression": Node {
+        "end": 6,
+        "expressions": [
+          Node {
+            "end": 1,
+            "raw": "1",
+            "start": 0,
+            "type": "Literal",
+            "value": 1,
+          },
+          Node {
+            "end": 6,
+            "left": Node {
+              "end": 3,
+              "raw": "4",
+              "start": 2,
+              "type": "Literal",
+              "value": 4,
+            },
+            "operator": "..",
+            "right": Node {
+              "end": 6,
+              "raw": "7",
+              "start": 5,
+              "type": "Literal",
+              "value": 7,
+            },
+            "start": 2,
+            "type": "BinaryExpression",
+          },
+        ],
+        "start": 0,
+        "type": "SequenceExpression",
+      },
+      "start": 0,
+      "type": "ExpressionStatement",
+    },
+  ],
+  "end": 6,
   "sourceType": "script",
   "start": 0,
   "type": "Program",
