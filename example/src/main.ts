@@ -1,5 +1,5 @@
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
   <div>
-    <p>Hello <code>remark-code-metadata</code></p>
+    <p>Hello <code>metastring</code></p>
   </div>
 `;

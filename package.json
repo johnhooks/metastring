@@ -1,20 +1,21 @@
 {
-	"name": "remark-code-metadata",
-	"version": "1.0.0-alpha.1",
+	"name": "metastring",
+	"version": "0.1.0",
 	"description": "Markdown code fence metadata parser",
-  "keywords": [
+	"keywords": [
 		"code",
 		"metadata",
-    "markdown"
-  ],
+		"markdown",
+		"parser"
+	],
 	"license": "MIT",
 	"author": "John Hooks <bitmachina@outlook.com> (https://johnhooks.io/)",
-	"homepage": "https://github.com/johnhooks/remark-code-metadata#readme",
+	"homepage": "https://github.com/johnhooks/metastring#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/johnhooks/remark-code-metadata.git"
+		"url": "https://github.com/johnhooks/metastring.git"
 	},
-	"bugs": "https://github.com/johnhooks/remark-code-metadata/issues",
+	"bugs": "https://github.com/johnhooks/metastring/issues",
 	"type": "module",
 	"sideEffects": false,
 	"exports": "./dist/index.js",
@@ -44,6 +45,7 @@
 		"@microsoft/api-extractor": "7.33.7",
 		"@testing-library/dom": "8.19.1",
 		"@testing-library/jest-dom": "5.16.5",
+		"@types/estree": "^1.0.0",
 		"@types/node": "18.11.11",
 		"@types/testing-library__jest-dom": "5.14.5",
 		"@typescript-eslint/eslint-plugin": "5.46.1",

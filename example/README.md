@@ -1,5 +1,5 @@
 <h1 align="center">
-  remark-code-metadata Example
+  metastring example
 </h1>
 
 ## ⚡️ Quick start

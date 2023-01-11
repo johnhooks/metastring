@@ -1,15 +1,15 @@
 <h1 align="center">
-  remark-code-metadata
+  metastring
 </h1>
 
 ## 📦 Install
 
 ```sh
-npm install remark-code-metadata
+npm install metastring
 
 # or
 
-yarn add remark-code-metadata
+yarn add metastring
 ```
 
 <!--

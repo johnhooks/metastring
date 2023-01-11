@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
 	resolve: {
 		alias: {
-			"remark-code-metadata": fileURLToPath(new URL("../src/index.ts", import.meta.url).href),
+			metastring: fileURLToPath(new URL("../src/index.ts", import.meta.url).href),
 		},
 	},
 });

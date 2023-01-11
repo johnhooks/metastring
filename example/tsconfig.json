@@ -15,7 +15,7 @@
 		"noImplicitReturns": true,
 		"skipLibCheck": true,
 		"paths": {
-			"remark-code-metadata": ["../src/index"]
+			"metastring": ["../src/index"]
 		}
 	},
 	"include": ["src"],
