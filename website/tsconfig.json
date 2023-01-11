@@ -15,7 +15,7 @@
 		"noImplicitReturns": true,
 		"skipLibCheck": true,
 		"paths": {
-			"metastring": ["../src/index"]
+			"parse-meta": ["../src/index"]
 		}
 	},
 	"include": ["src"],

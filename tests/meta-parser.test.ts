@@ -1,4 +1,4 @@
-import { metaParser } from "../src/index.js";
+import { metaParser } from "../src/meta-parser.js";
 
 describe("metaParserPlugin", () => {
 	describe("snapshots", () => {

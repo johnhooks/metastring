@@ -1,15 +1,15 @@
 <h1 align="center">
-  metastring
+  parse-meta
 </h1>
 
 ## 📦 Install
 
 ```sh
-npm install metastring
+npm install parse-meta
 
 # or
 
-yarn add metastring
+yarn add parse-meta
 ```
 
 <!--

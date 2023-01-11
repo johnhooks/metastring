@@ -1,13 +1,18 @@
+export type WordMatch = {
+	regexp: RegExp;
+	range?: number[];
+};
+
 /**
  * Markdown Code Block Metadata
  *
  * @public
  */
-export type TMetadata = {
+export type Metadata = {
 	/**
 	 * The lines to highlight.
 	 */
-	lineNumbers: number[];
+	highlight: number[];
 
 	/**
 	 * The initial line number to start from.
@@ -20,9 +25,19 @@ export type TMetadata = {
 	showLineNumbers: boolean;
 
 	/**
+	 * Word match objects.
+	 */
+	words: WordMatch[];
+
+	/**
 	 * The title of the code block.
 	 */
 	title?: string | undefined;
+
+	/**
+	 * The file to use as the source of the code block.
+	 */
+	file?: string | undefined;
 
 	/**
 	 * The language of the code block.

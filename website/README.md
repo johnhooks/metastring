@@ -1,5 +1,5 @@
 <h1 align="center">
-  metastring example
+  parse-meta Website
 </h1>
 
 ## ⚡️ Quick start

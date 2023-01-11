@@ -1,1 +1,3 @@
-export * from "./meta-parser.js";
+export default function () {
+	console.log("Hello parse-meta, let's build!");
+}
