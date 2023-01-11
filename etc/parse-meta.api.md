@@ -16,7 +16,7 @@ export type Metadata = {
 };
 
 // @public
-export function parse(input: string): Metadata;
+export function parseMeta(input: string): Metadata;
 
 // @public
 export type WordMatch = {

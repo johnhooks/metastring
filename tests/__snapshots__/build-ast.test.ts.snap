@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`metaParserPlugin > snapshots > should parse a RegExp 1`] = `
+exports[`build Metadata AST > snapshots > should parse a RegExp 1`] = `
 Node {
   "body": [
     Node {
@@ -27,7 +27,7 @@ Node {
 }
 `;
 
-exports[`metaParserPlugin > snapshots > should parse a RegExp after another expression 1`] = `
+exports[`build Metadata AST > snapshots > should parse a RegExp after another expression 1`] = `
 Node {
   "body": [
     Node {
@@ -65,7 +65,7 @@ Node {
 }
 `;
 
-exports[`metaParserPlugin > snapshots > should parse a RegExp before another expression 1`] = `
+exports[`build Metadata AST > snapshots > should parse a RegExp before another expression 1`] = `
 Node {
   "body": [
     Node {
@@ -103,7 +103,7 @@ Node {
 }
 `;
 
-exports[`metaParserPlugin > snapshots > should parse a directive with arguments 1`] = `
+exports[`build Metadata AST > snapshots > should parse a directive with arguments 1`] = `
 Node {
   "body": [
     Node {
@@ -160,7 +160,7 @@ Node {
 }
 `;
 
-exports[`metaParserPlugin > snapshots > should parse a directive without arguments 1`] = `
+exports[`build Metadata AST > snapshots > should parse a directive without arguments 1`] = `
 Node {
   "body": [
     Node {
@@ -182,7 +182,7 @@ Node {
 }
 `;
 
-exports[`metaParserPlugin > snapshots > should parse an assignment expression 1`] = `
+exports[`build Metadata AST > snapshots > should parse an assignment expression 1`] = `
 Node {
   "body": [
     Node {
