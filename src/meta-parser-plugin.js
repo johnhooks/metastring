@@ -5,6 +5,11 @@ import { tokTypes as tt, TokenType, tokContexts } from "acorn";
 const dotDot = new TokenType("..", { beforeExpr: true, binop: 11 });
 
 /**
+ * @todo create RangeExpression node type.
+ * @todo simplify parsing of assignment to only the `=` symbol
+ * @todo add `...` back in for inclusive range
+ */
+/**
  * Extend the `acorn` parser to read a double dot token
  */
 export function MetaParserPlugin(BaseParser) {
@@ -36,9 +41,14 @@ export function MetaParserPlugin(BaseParser) {
 		 */
 		readToken_dot() {
 			const next = this.input.charCodeAt(this.pos + 1);
+
+			// 46 = dot '.'
 			if (next === 46) {
-				// 46 = dot '.'
-				return this.finishOp(dotDot, 2);
+				const next2 = this.input.charCodeAt(this.pos + 2);
+				if (next2 === 46) return this.finishOp(tt.ellipsis, 3);
+				else {
+					return this.finishOp(dotDot, 2);
+				}
 			} else {
 				this.raise(this.pos, `Unexpected character '${codePointToString(next)}'`);
 			}
@@ -81,6 +91,7 @@ export function MetaParserPlugin(BaseParser) {
 
 		parseExpressionStatement(node, expr) {
 			node.expression = expr;
+			// Don't raise an error if a semicolon isn't found.
 			this.eat(tt.semi);
 			return this.finishNode(node, "ExpressionStatement");
 		}

@@ -1,0 +1,24 @@
+// Vitest Snapshot v1
+
+exports[`build Metadata object > title > create a title 1`] = `
+{
+  "highlight": [],
+  "lineNumbersStart": 1,
+  "showLineNumbers": false,
+  "title": "hello metadata",
+  "words": [],
+}
+`;
+
+exports[`build Metadata object > word matches > create a title 1`] = `
+{
+  "highlight": [],
+  "lineNumbersStart": 1,
+  "showLineNumbers": false,
+  "words": [
+    {
+      "regexp": /matchers\\?/,
+    },
+  ],
+}
+`;
