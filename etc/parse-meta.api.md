@@ -4,9 +4,25 @@
 
 ```ts
 
-// @public (undocumented)
-function (): void;
-export default default_2;
+// @public
+export type Metadata = {
+    highlight: number[];
+    lineNumbersStart: number;
+    showLineNumbers: boolean;
+    words: WordMatch[];
+    title?: string | undefined;
+    file?: string | undefined;
+    lang?: string | undefined;
+};
+
+// @public
+export function parse(input: string): Metadata;
+
+// @public
+export type WordMatch = {
+    regexp: RegExp;
+    range?: number[];
+};
 
 // (No @packageDocumentation comment for this package)
 

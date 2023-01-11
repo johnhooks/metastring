@@ -1,10 +1,15 @@
+/**
+ * Code block word match.
+ *
+ * @public
+ */
 export type WordMatch = {
 	regexp: RegExp;
 	range?: number[];
 };
 
 /**
- * Markdown Code Block Metadata
+ * Markdown code block metadata.
  *
  * @public
  */
